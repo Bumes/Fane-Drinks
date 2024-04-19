@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanes Getränkekarte</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
         #pdf-container {
             width: 100%;
-            height: 800px; /* Adjust this height as needed */
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <div id="pdf-container">
-        <embed src="drinks-menu.pdf" type="application/pdf" width="100%" height="100%" />
+        <object data="drinks-menu.pdf" type="application/pdf" width="100%" height="100%">
+            <p>PDF cannot be displayed. <a href="drinks-menu.pdf">Download</a> the PDF instead.</p>
+        </object>
     </div>
 </body>
 </html>

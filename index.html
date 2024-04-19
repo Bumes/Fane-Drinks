@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
+    <title>Fanes Getränkekarte</title>
+    <style>
+        #pdf-container {
+            width: 100%;
+            height: 800px; /* Adjust this height as needed */
+        }
+    </style>
 </head>
 <body>
-    <embed src="drinks-menu.pdf" type="application/pdf" width="100%" height="100%" />
+    <div id="pdf-container">
+        <embed src="your-pdf-file.pdf" type="application/pdf" width="100%" height="100%" />
+    </div>
 </body>
 </html>
